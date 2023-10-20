@@ -7,6 +7,54 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid x:Name="gr1" Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="203*"/>
+                <ColumnDefinition Width="197*"/>
+                <ColumnDefinition Width="197*"/>
+                <ColumnDefinition Width="203*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="101*"/>
+                <RowDefinition Height="116*"/>
+                <RowDefinition Height="107*"/>
+                <RowDefinition Height="110*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnExit" Click="btnExit_click" Content="Выход" HorizontalAlignment="Center" VerticalAlignment="Top" Height="22" Width="105" Grid.Column="3" Grid.Row="3" Margin="0,55,0,0"/>
+            <Button x:Name="btnInfo" Click="btnInfo_click" Grid.Column="3" Content="О программе" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="105"/>
+            <TextBox x:Name="tbA" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="0,58,0,0"/>
+            <TextBox x:Name="tbB" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="0,58,0,0"/>
+            <Label Grid.Column="1" Content="Введите пару чисел A&#xD;&#xA;через пробел" HorizontalAlignment="Center" Margin="0,20,0,0" Grid.Row="1" VerticalAlignment="Top" Width="138"/>
+            <Label Grid.Column="2" Content="Введите пару чисел B &#xD;&#xA;через пробел" HorizontalAlignment="Center" Margin="0,19,0,0" Grid.Row="1" VerticalAlignment="Top" Width="132" RenderTransformOrigin="0.147,0.513" Height="44"/>
+            <TextBox x:Name="tbRes1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="176" Grid.Column="2" IsReadOnly="True" Grid.Row="2" Height="87"/>
+            <TextBox x:Name="tbRes2" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="183" Grid.Column="3" IsReadOnly="True" Grid.Row="2" Height="87"/>
+            <Button x:Name="btnDa" Click="btnDa_click" Grid.Column="1" Content="Решение" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="43" Width="77"/>
+            <Button x:Name="btnMediana" Click="btnMediana_click" Content="Нахождение &#xD;&#xA;медианы" HorizontalAlignment="Center" Margin="0,27,0,0" Grid.Row="3" VerticalAlignment="Top" Height="47" Width="90"/>
+        </Grid>
+
+        <Grid x:Name="gr2" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="203*"/>
+                <ColumnDefinition Width="197*"/>
+                <ColumnDefinition Width="197*"/>
+                <ColumnDefinition Width="203*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="101*"/>
+                <RowDefinition Height="116*"/>
+                <RowDefinition Height="107*"/>
+                <RowDefinition Height="110*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btnExitB" Click="btnExit_click" Content="Выход" HorizontalAlignment="Center" VerticalAlignment="Top" Height="22" Width="105" Grid.Column="3" Grid.Row="3" Margin="0,55,0,0"/>
+            <Button x:Name="btnInfoB" Click="btnInfo_click" Grid.Column="3" Content="О программе" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="105"/>
+            <TextBox x:Name="tbRes1B" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="176" Grid.Column="2" IsReadOnly="True" Grid.Row="2" Height="87"/>
+            <TextBox x:Name="tbRes2B" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="183" Grid.Column="3" IsReadOnly="True" Grid.Row="2" Height="87"/>
+            <Button x:Name="btnDaB" Click="btnDaB_click" Grid.Column="1" Content="Решение" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="43" Width="77"/>
+            <Button x:Name="btnMedianaB" Click="btnMediana_clickB" Content="Назад" HorizontalAlignment="Center" Margin="0,27,0,0" Grid.Row="3" VerticalAlignment="Top" Height="47" Width="90"/>
+            <TextBox x:Name="tbAB" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Grid.ColumnSpan="2"/>
+            <Label Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="137,23,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="120"/>
+            <Label Grid.Column="1" Content="Введите пару числе &#xD;&#xA;через пробел" HorizontalAlignment="Center" Margin="0,11,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="120"/>
+        </Grid>
     </Grid>
+
 </Window>
